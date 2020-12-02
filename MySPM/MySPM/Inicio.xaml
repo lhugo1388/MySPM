@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySPM.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ejemplos de conexión a base de datos"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Guardar" Clicked="BtnGuardar_Button_Clicked"/>
+            <Button Text="Consultar Todos" Clicked="BtnConsultarTodos_Button_Clicked"/>
+            <Button Text="Consultar por identificador" Clicked="BtnConsultarPorId_Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySPM.GetAll">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ejemplo consultar todos"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="btnConsultarr" Text="Consultar" Clicked="btnConsultarr_Clicked"/>
+            <StackLayout Margin="20,35,20,20" >
+                <ListView x:Name="grData" ItemsSource="{Binding Alumnos}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="20, 0, 0, 0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="60" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0"
+                                           Grid.Column="0"
+                                           Text="{Binding id}"
+                                           FontAttributes="Bold" 
+                                           VerticalTextAlignment="Center" />   
+                                    <Label Grid.Row="0"
+                                           Grid.Column="1"
+                                           Text="{Binding nombre}" 
+                                           VerticalTextAlignment="Center" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+                <Button Grid.Row="0"
+                        Grid.Column="2"
+                        Text="Actualizar" 
+                        VerticalOptions="Start"
+                        x:Name="btnUpdate"
+                        Clicked="btnUpdate_Clicked" />
+                <Button Grid.Row="0"
+                        Grid.Column="3"
+                        Text="Eliminar" 
+                        VerticalOptions="Start" 
+                        x:Name="btnDelete"
+                        Clicked="btnDelete_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

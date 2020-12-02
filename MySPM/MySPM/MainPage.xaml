@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySPM.MainPage"
+             BackgroundColor="Purple"
+             BackgroundImageSource="login">
+
+    <StackLayout>
+        <Grid VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0"
+                   Grid.Row="0"
+                   Source="logo"
+                   WidthRequest="150"
+                   HeightRequest="150"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+
+            <StackLayout Grid.Row="1" Grid.Column="0" >
+                <Label Text="Soluciones de Programación Móvil" HorizontalTextAlignment="Center" FontSize="15" FontFamily="Arial" TextColor="White" />
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="0">
+                <Button x:Name="btnEntrar"
+                        Text="Entrar !"
+                        Clicked="btnEntrar_Clicked"/>
+            </StackLayout>
+
+        </Grid>
+    </StackLayout>
+    
+</ContentPage>

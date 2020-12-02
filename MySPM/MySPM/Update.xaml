@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySPM.Update">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ejemplo Actualizar"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Nombre:" />
+            <Entry x:Name="txtName" Placeholder="" />
+            <Label Text="Usuario:" />
+            <Entry x:Name="txtUser" Placeholder="" />
+            <Label Text="Contraseña:" />
+            <Entry x:Name="txtPsw" Placeholder="" />
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

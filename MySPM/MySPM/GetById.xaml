@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySPM.GetById">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ejemplo obtener por id"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Identificador del alumno:" />
+            <Entry x:Name="txtId" Placeholder="" />
+            <Button x:Name="btnConsultar" Text="Consultar" Clicked="btnConsultar_Clicked"/>
+            <Label x:Name="lblName" Text="" />
+            <Label x:Name="lblUser" Text="" />
+            <Label x:Name="lblPassword" Text="" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
